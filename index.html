@@ -57,9 +57,19 @@
       <section class="hero overlay">
         <div class="conteiner">
           <h1 class="hero-headlines">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button data-modal-open type="button" class="button">Заказать услугу</button>
         </div>
       </section>
+      <!-- Modal window -->
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+          <button data-modal-close type="button" class="modal-btn">
+            <svg width="14px" height="14px">
+              <use href="./images/icon/symbol-defs.svg#icon-buttom-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!-- Особенности -->
       <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Особенности</h2>
       <section class="section-specifics">
@@ -114,12 +124,15 @@
           <ul class="work-examples list">
             <li class="work-examples-item">
               <img class="work-examples-pic" src="./images/box_1.jpg" alt="Адаптивная верстка сайтов" width="370" />
+              <p class="work-examples-title">Десктопные приложения</p>
             </li>
             <li class="work-examples-item">
               <img class="work-examples-pic" src="./images/box_2.jpg" alt="Адаптивная верстка сайтов" width="370" />
+              <p class="work-examples-title">Мобильные приложения</p>
             </li>
             <li class="work-examples-item">
               <img class="work-examples-pic" src="./images/box_3.jpg" alt="Адаптивная верстка сайтов" width="370" />
+              <p class="work-examples-title">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -406,5 +419,7 @@
         </address>
       </div>
     </footer>
+    <!-- Scripts -->
+<script src="./js/modal.js"></script>
   </body>
 </html>
