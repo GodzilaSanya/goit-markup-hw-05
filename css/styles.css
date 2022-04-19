@@ -389,12 +389,12 @@ body {
 .work-examples-title {
   position: absolute;
   bottom: 0;
-
+  display: flex;
   margin: 0;
-  padding-top: 27px;
   width: 370px;
   height: 70px;
-
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 
@@ -651,13 +651,11 @@ body {
 }
 
 .examples-thumb-title {
-  display: inline-flex;
-  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: 0;
-  padding: 0 24px;
+  padding: 63px 24px;
 
   transform: translateY(100%);
 
@@ -734,7 +732,3 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* margin p - забрав
-  цікавить правильність модалки
- */
